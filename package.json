@@ -1,0 +1,36 @@
+{
+  "name": "node-youtube",
+  "version": "0.2.0",
+  "description": "YouTube upload API",
+  "keywords": [
+    "youtube",
+    "upload",
+    "video"
+  ],
+  "contributors": [
+    {
+      "name": "TJ Holowaychuk",
+      "email": "tj@learnboost.com"
+    },
+    {
+      "name": "Heikki Verta",
+      "email": "heikki@applifier.com"
+    }
+  ],
+  "dependencies": {
+    "mime": "1.2.2",
+    "request": "2.1.1",
+    "xml2js": "0.1.9",
+    "qs": "0.4.2"
+  },
+  "main": "index",
+  "engines": {
+    "node": "*"
+  },
+  "readme": "\n# youtube\n\n  YouTube upload API\n\n## Example\n\n```js\nvar youtube = require('../');\n\nvar video = youtube\n.createUpload('/path/to/my/video.webm')\n.user('tjholowaychukable')\n.source('LearnBoost')\n.password('rightmeow')\n.key('AI39si6L-CpOoC82Kn1noxwSXbfySDW0VCpxIPPwIu2YgZthc_XKEZPLw-4mxRxZYyh-xrGhZmuIKkNfFkhvZrptwc62qbXW8Q')\n.title('Testing')\n.description('Some test stuff')\n.category('Education')\n.upload(function(err, res){\n  if (err) throw err;\n  console.log('done');\n  console.log(res.id);\n  console.log(res.url);\n  console.log(res.embed());\n  console.log(res.embed(320, 320));\n  console.log(require('util').inspect(res, false, 15, true));\n});\n```\n\nembed via id:\n\n```js\nyoutube.embed(video.id);\n// => String\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 LearnBoost &lt;tj@learnboost.com&gt; 2012 Applifier &lt;heikki@applifier.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+  "_id": "youtube@0.1.0",
+  "dist": {
+    "shasum": "83d4f41dbff766ab641b7b92f6a006fd4448383c"
+  },
+  "_from": "youtube@0.1.0"
+}
