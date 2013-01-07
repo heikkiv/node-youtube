@@ -1,7 +1,7 @@
 
 # youtube
 
-  YouTube upload API
+  YouTube upload API forked from TJ Holowaychuk youtube npm package.
 
 ## Example
 
@@ -39,7 +39,7 @@ youtube.embed(video.id);
 
 (The MIT License)
 
-Copyright (c) 2011 LearnBoost &lt;tj@learnboost.com&gt; 2012 Applifier &lt;heikki@applifier.com&gt;
+Copyright (c) 2011 LearnBoost &lt;tj@learnboost.com&gt;, 2012 Applifier &lt;heikki@applifier.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
